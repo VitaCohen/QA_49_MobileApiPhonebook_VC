@@ -1,8 +1,7 @@
 package utils;
 
-import dto.Contact;
+import models.Contact;
 import net.datafaker.Faker;
-import org.checkerframework.checker.units.qual.C;
 
 public class ContactFactory {
 

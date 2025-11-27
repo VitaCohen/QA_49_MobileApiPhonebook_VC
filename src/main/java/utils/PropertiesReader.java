@@ -7,10 +7,7 @@ import java.util.Properties;
 
 public class PropertiesReader  {
 
-    public static void main(String[] args) {
-        System.out.println(getProperty("base.properties", "baseUrl"));
 
-    }
     public static String getProperty(String fileName, String key){
         Properties properties = new Properties();
         try(FileInputStream fileInputStream =
