@@ -15,7 +15,7 @@ public class TestBase {
     }
 
 
-    @Test
+    @Test(enabled = false)
     public  void  start(){
 
     }
