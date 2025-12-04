@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="Appium config">
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AuthenticationScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsRegistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsSplash.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="create splash test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ErrorScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/BaseScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsRegistration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.TestBase.start.executor": "Run",
+    "Gradle.TestsRegistration.testRegistrationNegative_emptyEmail.executor": "Run",
     "Gradle.TestsRegistration.testRegistrationPositive.executor": "Run",
     "Gradle.TestsSplash.testVersionApp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -87,8 +84,11 @@
       <recent name="C:\Projects IDEA\QA_49\QA_49_MobileApiPhonebook_VC\src\main\java\utils" />
       <recent name="C:\Projects IDEA\QA_49\QA_49_MobileApiPhonebook_VC\src\main\java\models" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests_mobile" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestsRegistration.testRegistrationPositive">
+  <component name="RunManager" selected="Gradle.TestsLogin.testRegistrationPositive">
     <configuration name="TestBase.start" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -103,6 +103,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests_mobile.TestBase.start&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestsLogin.testRegistrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests_mobile.TestsLogin.testRegistrationPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestsRegistration.testRegistrationNegative_emptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_emptyEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -163,6 +211,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestsLogin.testRegistrationPositive" />
+        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_emptyEmail" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationPositive" />
         <item itemvalue="Gradle.TestsSplash.testVersionApp" />
         <item itemvalue="Gradle.TestBase.start" />
@@ -210,12 +260,21 @@
       <option name="project" value="LOCAL" />
       <updated>1764615839713</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="create splash test">
+      <option name="closed" value="true" />
+      <created>1764869503360</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764869503360</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
     <MESSAGE value="Appium config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Appium config" />
+    <MESSAGE value="create splash test" />
+    <option name="LAST_COMMIT_MESSAGE" value="create splash test" />
   </component>
 </project>

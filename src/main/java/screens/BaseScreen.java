@@ -24,5 +24,9 @@ public boolean textInElementPresent(WebElement element, String  text, int time){
 
 }
 
+public  boolean isElementPresent(WebElement element, int time){
+     return new WebDriverWait(driver, Duration.ofSeconds(time))
+              .until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+}
 
 }
