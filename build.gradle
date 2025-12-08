@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-   // id 'io.qameta.allure' version '2.11.2'
+    id 'io.qameta.allure' version '2.11.2'
 }
 
 group = 'org.example'
@@ -29,18 +29,37 @@ dependencies {
 
     implementation 'io.appium:java-client:8.3.0'
 
-//    testImplementation 'io.qameta.allure:allure-testng:2.21.0'
+    testImplementation 'io.qameta.allure:allure-testng:2.25.0'
+
+// Optional: Additional Allure integrations
+    testImplementation 'io.qameta.allure:allure-java-commons:2.25.0'
+    testImplementation 'org.slf4j:slf4j-simple:2.0.9'
 
 }
 
-//allure {
-//    version = '2.35.1'
-//    autoconfigure = true
-//    aspectjweaver = true
-//}
+allure {
+    version = '2.25.0'
+    adapter {
+        frameworks {
+            testng {
+                adapterVersion = '2.25.0'
+            }
+        }
+    }
+}
 
 test {
     useTestNG() // или useJUnitPlatform()
+            {
+                useDefaultListeners = true
+                suites 'src/test/resources/testng.xml'
+            }
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+
+
     jvmArgs(
             '--add-opens=java.base/java.lang=ALL-UNNAMED',
             '--add-opens=java.base/java.io=ALL-UNNAMED',

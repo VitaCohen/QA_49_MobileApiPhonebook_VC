@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="create registration and login tests">
+    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="HW_15 registration negative tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsRegistration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,7 @@
     "Gradle.TestsRegistration.testRegistrationNegative_emptyPassword.executor": "Run",
     "Gradle.TestsRegistration.testRegistrationNegative_wrongEmail.executor": "Run",
     "Gradle.TestsRegistration.testRegistrationNegative_wrongPassword.executor": "Run",
+    "Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters.executor": "Run",
     "Gradle.TestsRegistration.testRegistrationPositive.executor": "Run",
     "Gradle.TestsSplash.testVersionApp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -93,7 +93,7 @@
       <recent name="tests_mobile" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword">
+  <component name="RunManager" selected="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters">
     <configuration name="TestsRegistration.testRegistrationNegative_emptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -190,7 +190,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestsRegistration.testRegistrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -203,7 +203,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationPositive&quot;" />
+            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,11 +216,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_emptyPassword" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongEmail" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_emptyEmail" />
-        <item itemvalue="Gradle.TestsRegistration.testRegistrationPositive" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764873665963</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="HW_15 registration negative tests">
+      <option name="closed" value="true" />
+      <created>1765136378070</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765136378070</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,6 +297,7 @@
     <MESSAGE value="Appium config" />
     <MESSAGE value="create splash test" />
     <MESSAGE value="create registration and login tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="create registration and login tests" />
+    <MESSAGE value="HW_15 registration negative tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_15 registration negative tests" />
   </component>
 </project>
