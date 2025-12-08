@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="HW_15 registration negative tests">
+    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="build.gragle allure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/allure_tests/AllureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsAddNewContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.comand.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +68,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.TestBase.start.executor": "Run",
+    "Gradle.TestsAddNewContact.addNewContactPositiveTest.executor": "Run",
+    "Gradle.TestsAddNewContact.addNewContactTest.executor": "Run",
     "Gradle.TestsLogin.testLoginNegative_emptyEmail.executor": "Run",
     "Gradle.TestsLogin.testLoginNegative_wrongEmail.executor": "Run",
     "Gradle.TestsLogin.testLoginNegative_wrongPassword.executor": "Run",
@@ -93,7 +101,55 @@
       <recent name="tests_mobile" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters">
+  <component name="RunManager" selected="Gradle.TestsAddNewContact.addNewContactPositiveTest">
+    <configuration name="TestsAddNewContact.addNewContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests_mobile.TestsAddNewContact.addNewContactPositiveTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TestsAddNewContact.addNewContactTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests_mobile.TestsAddNewContact.addNewContactTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TestsRegistration.testRegistrationNegative_emptyEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,78 +164,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_emptyEmail&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestsRegistration.testRegistrationNegative_emptyPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_emptyPassword&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestsRegistration.testRegistrationNegative_wrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_wrongEmail&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestsRegistration.testRegistrationNegative_wrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationNegative_wrongPassword&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -214,13 +198,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TestsRegistration.testRegistrationPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests_mobile.TestsRegistration.testRegistrationPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters" />
-        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword" />
-        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_emptyPassword" />
-        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongEmail" />
+        <item itemvalue="Gradle.TestsAddNewContact.addNewContactPositiveTest" />
+        <item itemvalue="Gradle.TestsAddNewContact.addNewContactTest" />
         <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_emptyEmail" />
+        <item itemvalue="Gradle.TestsRegistration.testRegistrationPositive" />
+        <item itemvalue="Gradle.TestsRegistration.testRegistrationNegative_wrongPassword_WO_Letters" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765136378070</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="build.gragle allure">
+      <option name="closed" value="true" />
+      <created>1765210526730</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765210526730</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -298,6 +314,7 @@
     <MESSAGE value="create splash test" />
     <MESSAGE value="create registration and login tests" />
     <MESSAGE value="HW_15 registration negative tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW_15 registration negative tests" />
+    <MESSAGE value="build.gragle allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="build.gragle allure" />
   </component>
 </project>

@@ -16,6 +16,9 @@ public class ContactListScreen extends  BaseScreen{
     @AndroidFindBy(accessibility = "add")
     WebElement btnPlus;
 
+    @AndroidFindBy(xpath = "//android.widget.Toast")
+    WebElement popUpMessage;
+
 
 
 
@@ -24,9 +27,18 @@ public class ContactListScreen extends  BaseScreen{
     }
 
     public  boolean btnPlusIsPresent(int time){
+
         return isElementPresent(btnPlus, time);
     }
 
+
+    public void clickBtnAdd() {
+        btnPlus.click();
+    }
+
+    public  boolean validatePopUpMessage(String text, int time){
+        return  textInElementPresent(popUpMessage, text, time);
+    }
 
 
 

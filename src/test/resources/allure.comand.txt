@@ -1,0 +1,8 @@
+./gradlew clean test
+./gradlew allureReport
+./gradlew allureServe
+
+don't work!!!!!!!
+./gradlew clean test
+./gradlew allureGenerate
+./gradlew allureOpen
