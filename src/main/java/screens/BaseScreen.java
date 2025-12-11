@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.android_utils.SwipeUtils;
 
 import java.time.Duration;
 
-public class BaseScreen {
+public class BaseScreen implements SwipeUtils {
 
    protected  static AppiumDriver driver;
 

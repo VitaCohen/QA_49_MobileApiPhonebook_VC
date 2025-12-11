@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import screens.AddNewContactScreen;
 import screens.AuthenticationScreen;
 import screens.ContactListScreen;
+import screens.ErrorScreen;
 import utils.ContactFactory;
 
 public class TestsAddNewContact extends  TestBase{
@@ -34,6 +35,17 @@ public class TestsAddNewContact extends  TestBase{
         addNewContactScreen.typeContact(contact);
         addNewContactScreen.clickBtnCreateContact();
         Assert.assertTrue(contactListScreen.validatePopUpMessage("Contact was added", 10));
+
+
+    }
+
+    @Test
+    public  void addNewContactNegativeTest_emptyLastName(){
+        Contact contact = ContactFactory.positiveContact();
+        contact.setLastName("");
+        addNewContactScreen.typeContact(contact);
+        addNewContactScreen.clickBtnCreateContact();
+        Assert.assertTrue(new ErrorScreen(driver).validateErrorText("lastName=must not be blank", 10));
 
 
     }
