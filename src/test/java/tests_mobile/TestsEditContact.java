@@ -35,12 +35,12 @@ public class TestsEditContact extends TestBase{
 
     }
     @Test
-    public void editContactNegativeTest_wronglastName() {
+    public void editContactNegativeTest_wrongLastName() {
         Contact contact = ContactFactory.positiveContact();
         contact.setLastName("");
         contactListScreen.openContactMiddle();
         editContactScreen = new EditContactScreen(driver);
-        editContactScreen.typeEditContactForm(ContactFactory.positiveContact());
+        editContactScreen.typeEditContactForm(contact);
         Assert.assertTrue(new ErrorScreen(driver).validateErrorText("lastName=must not be blank", 10));
 
 

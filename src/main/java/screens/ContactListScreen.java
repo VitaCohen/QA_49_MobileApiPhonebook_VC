@@ -10,7 +10,7 @@ import utils.enums.Direction;
 import java.time.Duration;
 import java.util.List;
 
-public class ContactListScreen extends  BaseScreen{
+public class ContactListScreen extends BaseScreen {
 
     public ContactListScreen(AppiumDriver driver) {
         super(driver);
@@ -33,14 +33,11 @@ public class ContactListScreen extends  BaseScreen{
     List<WebElement> contactListOnScreen;
 
 
-
-
-
-    public boolean validateContactListScreenOpenAfterRegistration(String  text, int time){
-        return  textInElementPresent(textNoContacts, text, time);
+    public boolean validateContactListScreenOpenAfterRegistration(String text, int time) {
+        return textInElementPresent(textNoContacts, text, time);
     }
 
-    public  boolean btnPlusIsPresent(int time){
+    public boolean btnPlusIsPresent(int time) {
 
         return isElementPresent(btnPlus, time);
     }
@@ -50,11 +47,11 @@ public class ContactListScreen extends  BaseScreen{
         btnPlus.click();
     }
 
-    public  boolean validatePopUpMessage(String text, int time){
-        return  textInElementPresent(popUpMessage, text, time);
+    public boolean validatePopUpMessage(String text, int time) {
+        return textInElementPresent(popUpMessage, text, time);
     }
 
-    public void deleteContactMiddle(){
+    public void deleteContactMiddle() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(btnPlus));
         swipeScreen(driver, Direction.RIGHT);
@@ -68,7 +65,7 @@ public class ContactListScreen extends  BaseScreen{
         swipeScreen(driver, Direction.LEFT);
     }
 
-    public void deleteFirstContact(){
+    public void deleteFirstContact() {
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOf(btnPlus));
         swipeInsideElement(driver, contactListOnScreen.get(0), Direction.RIGHT);

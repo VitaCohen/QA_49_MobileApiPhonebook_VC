@@ -33,4 +33,12 @@ public class TestsDeleteContact extends TestBase {
 
     }
 
+    @Test
+    public void deleteFirstContactTest() {
+        contactListScreen.deleteFirstContact();
+
+    }
+
+
+
 }
