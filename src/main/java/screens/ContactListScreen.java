@@ -33,6 +33,7 @@ public class ContactListScreen extends BaseScreen {
     List<WebElement> contactListOnScreen;
 
 
+
     public boolean validateContactListScreenOpenAfterRegistration(String text, int time) {
         return textInElementPresent(textNoContacts, text, time);
     }
@@ -70,6 +71,21 @@ public class ContactListScreen extends BaseScreen {
                 .until(ExpectedConditions.visibilityOf(btnPlus));
         swipeInsideElement(driver, contactListOnScreen.get(0), Direction.RIGHT);
         btnYes.click();
+    }
+
+    //HW_16
+    public void editFirstContact() {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOf(btnPlus));
+        swipeInsideElement(driver, contactListOnScreen.get(0), Direction.LEFT);
+
+    }
+
+    public void editMiddleContact() {
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOf(btnPlus));
+        swipeScreen(driver, Direction.LEFT);
+
     }
 
 }

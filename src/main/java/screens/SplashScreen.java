@@ -14,6 +14,7 @@ public class SplashScreen extends BaseScreen {
     WebElement versionApp;
 
 public  boolean validateVersionApp(String text, int time){
+
     return  textInElementPresent(versionApp, text, time);
 }
 

@@ -11,7 +11,7 @@ import screens.EditContactScreen;
 import screens.ErrorScreen;
 import utils.ContactFactory;
 
-public class TestsEditContact extends TestBase{
+public class TestsEditContact extends TestBase {
     AuthenticationScreen authenticationScreen;
     ContactListScreen contactListScreen;
     EditContactScreen editContactScreen;
@@ -34,6 +34,7 @@ public class TestsEditContact extends TestBase{
         Assert.assertTrue(contactListScreen.validatePopUpMessage("Contact was updated!", 10));
 
     }
+
     @Test
     public void editContactNegativeTest_wrongLastName() {
         Contact contact = ContactFactory.positiveContact();
@@ -42,8 +43,28 @@ public class TestsEditContact extends TestBase{
         editContactScreen = new EditContactScreen(driver);
         editContactScreen.typeEditContactForm(contact);
         Assert.assertTrue(new ErrorScreen(driver).validateErrorText("lastName=must not be blank", 10));
+    }
 
+    //HW_16
+    @Test
+    public void editFirstContactPositiveTest() {
+        contactListScreen.editFirstContact();
+        editContactScreen = new EditContactScreen(driver);
+        String name = "UpdateName";
+        editContactScreen.updateName(name);
+        Assert.assertTrue(contactListScreen.validatePopUpMessage("Contact was updated!", 10));
 
     }
+
+    @Test
+    public void editMiddleContactPositiveTest() {
+        contactListScreen.editMiddleContact();
+        editContactScreen = new EditContactScreen(driver);
+        String lastName = "UpdateLastName";
+        editContactScreen.updateLastName(lastName);
+        Assert.assertTrue(contactListScreen.validatePopUpMessage("Contact was updated!", 10));
+
+    }
+
 
 }

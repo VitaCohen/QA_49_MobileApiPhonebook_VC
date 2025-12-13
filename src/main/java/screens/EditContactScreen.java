@@ -34,4 +34,16 @@ public class EditContactScreen extends BaseScreen{
         inputDesc.sendKeys(contact.getDescriptions());
         btnUpdate.click();
     }
+
+    //HW_16
+    public void updateName(String name) {
+        inputName.sendKeys(name);
+        btnUpdate.click();
+    }
+
+    public void updateLastName(String lastName) {
+        inputLastName.sendKeys(lastName);
+        btnUpdate.click();
+    }
+
 }
