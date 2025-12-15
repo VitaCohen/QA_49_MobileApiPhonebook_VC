@@ -31,7 +31,7 @@ public class EditContactScreen extends BaseScreen{
         inputEmail.sendKeys(contact.getEmail());
         inputPhone.sendKeys(contact.getPhone());
         inputAddress.sendKeys(contact.getAddress());
-        inputDesc.sendKeys(contact.getDescriptions());
+        inputDesc.sendKeys(contact.getDescription());
         btnUpdate.click();
     }
 

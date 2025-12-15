@@ -18,7 +18,7 @@ public class ContactFactory {
                 .email(faker.internet().emailAddress())
                 .phone(faker.number().digits(14))
                 .address(faker.address().fullAddress())
-                .descriptions("it's my friend")
+                .description("it's my friend")
                 .build();
     }
 
