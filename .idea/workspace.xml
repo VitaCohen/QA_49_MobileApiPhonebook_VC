@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="Swipe">
+    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="HW_16 editFirstContactTest, editMiddleContactTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/manager/ContactController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestAddNewContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestRegistrationUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/SplashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsEditContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsEditContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/ErrorMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/ErrorMessageDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.QA_49_MobileApiPhonebook_VC [:AuthenticationController.main()].executor": "Run",
     "Gradle.TestBase.start.executor": "Run",
+    "Gradle.TestRegistrationUser.registrationNegativeTest_wrongEmail.executor": "Run",
+    "Gradle.TestRegistrationUser.registrationPositiveTest.executor": "Run",
     "Gradle.TestsAddNewContact.addNewContactNegativeTest_emptyLastName.executor": "Run",
     "Gradle.TestsAddNewContact.addNewContactPositiveTest.executor": "Run",
     "Gradle.TestsAddNewContact.addNewContactTest.executor": "Run",
@@ -108,8 +111,21 @@
       <recent name="tests_mobile" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestsEditContact.editMiddleContactPositiveTest">
-    <configuration name="TestsDeleteContact.deleteFirstContactTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestRegistrationUser.registrationNegativeTest_wrongEmail">
+    <configuration name="AuthenticationController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="manager.AuthenticationController" />
+      <module name="QA_49_MobileApiPhonebook_VC.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="manager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRegistrationUser.registrationNegativeTest_wrongEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,7 +138,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsDeleteContact.deleteFirstContactTest&quot;" />
+            <option value="&quot;tests_api.TestRegistrationUser.registrationNegativeTest_wrongEmail&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -133,7 +149,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestsEditContact.editContactNegativeTest_wronglastName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestRegistrationUser.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -146,31 +162,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsEditContact.editContactNegativeTest_wronglastName&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TestsEditContact.editContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsEditContact.editContactPositiveTest&quot;" />
+            <option value="&quot;tests_api.TestRegistrationUser.registrationPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestRegistrationUser.registrationNegativeTest_wrongEmail" />
+        <item itemvalue="Gradle.TestRegistrationUser.registrationPositiveTest" />
+        <item itemvalue="Application.AuthenticationController" />
         <item itemvalue="Gradle.TestsEditContact.editMiddleContactPositiveTest" />
         <item itemvalue="Gradle.TestsEditContact.editFirstContactPositiveTest" />
-        <item itemvalue="Gradle.TestsDeleteContact.deleteFirstContactTest" />
-        <item itemvalue="Gradle.TestsEditContact.editContactNegativeTest_wronglastName" />
-        <item itemvalue="Gradle.TestsEditContact.editContactPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765572929372</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="HW_16 editFirstContactTest, editMiddleContactTest">
+      <option name="closed" value="true" />
+      <created>1765659383026</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765659383026</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -357,6 +357,7 @@
     <MESSAGE value="allure, addNewContactPositiveTest" />
     <MESSAGE value="Swipe2" />
     <MESSAGE value="Swipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swipe" />
+    <MESSAGE value="HW_16 editFirstContactTest, editMiddleContactTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_16 editFirstContactTest, editMiddleContactTest" />
   </component>
 </project>

@@ -13,7 +13,7 @@ public class ErrorMessageDto {
     private String timestamp;
     private int status;
     private  String error;
-    private String message;
+    private Object message;
     private String path;
 
 
