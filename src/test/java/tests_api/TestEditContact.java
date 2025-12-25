@@ -26,7 +26,7 @@ public class TestEditContact extends ContactController {
     public void editContactPositiveTest() {
         System.out.println(resultLogin.get(1));
         Contact newContact = ContactFactory.positiveContact();
-        newContact.setId(resultLogin.get(0));
+        newContact.setId(resultLogin.get(1));
         Response response = requestEditContact(newContact, ADD_NEW_CONTACT, resultLogin.get(0));
         if (response.getStatusCode() == 200) {
             boolean flag = false;
