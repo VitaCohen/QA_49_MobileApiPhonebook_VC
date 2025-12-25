@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="rest assured">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestEditContact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestGetAllUserContacts.java" afterDir="false" />
+    <list default="true" id="872b098e-5f9e-4b2c-922e-7104e1df3645" name="Changes" comment="rest assured get add edit contact">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestDeleteContactById.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ContactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/AddNewContactScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/EditContactScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ContactFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests_api/TestAddNewContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestAddNewContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests_api/TestEditContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_api/TestEditContact.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsDeleteContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsDeleteContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsEditContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests_mobile/TestsEditContact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +70,7 @@
     "Gradle.QA_49_MobileApiPhonebook_VC [:AuthenticationController.main()].executor": "Run",
     "Gradle.TestAddNewContact.addNweContactPositiveTest.executor": "Run",
     "Gradle.TestBase.start.executor": "Run",
+    "Gradle.TestDeleteContactById.deleteContactByIdPositiveTest.executor": "Run",
     "Gradle.TestEditContact.edidContactPositiveTest.executor": "Run",
     "Gradle.TestEditContact.editContactPositiveTest.executor": "Run",
     "Gradle.TestGetAllUserContacts.getAllUserContacts.executor": "Run",
@@ -86,6 +83,7 @@
     "Gradle.TestsDeleteContact.deleteFirstContactTest.executor": "Run",
     "Gradle.TestsEditContact.editContactNegativeTest_wronglastName.executor": "Run",
     "Gradle.TestsEditContact.editContactPositiveTest.executor": "Run",
+    "Gradle.TestsEditContact.editContactPositiveTest_validateApi.executor": "Run",
     "Gradle.TestsEditContact.editFirstContactPositiveTest.executor": "Run",
     "Gradle.TestsEditContact.editMiddleContactPositiveTest.executor": "Run",
     "Gradle.TestsLogin.testLoginNegative_emptyEmail.executor": "Run",
@@ -119,8 +117,8 @@
       <recent name="tests_mobile" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestEditContact.editContactPositiveTest">
-    <configuration name="TestAddNewContact.addNweContactPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TestsEditContact.editContactPositiveTest_validateApi">
+    <configuration name="TestDeleteContactById.deleteContactByIdPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +131,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_api.TestAddNewContact.addNweContactPositiveTest&quot;" />
+            <option value="&quot;tests_api.TestDeleteContactById.deleteContactByIdPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,7 +190,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestGetAllUserContacts.getAllUserContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestsDeleteContact.deleteFirstContactTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -205,7 +203,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_api.TestGetAllUserContacts.getAllUserContacts&quot;" />
+            <option value="&quot;tests_mobile.TestsDeleteContact.deleteFirstContactTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -216,7 +214,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestsDeleteContact.deleteContactTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestsEditContact.editContactPositiveTest_validateApi" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -229,7 +227,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests_mobile.TestsDeleteContact.deleteContactTest&quot;" />
+            <option value="&quot;tests_mobile.TestsEditContact.editContactPositiveTest_validateApi&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -242,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestsEditContact.editContactPositiveTest_validateApi" />
+        <item itemvalue="Gradle.TestsDeleteContact.deleteFirstContactTest" />
         <item itemvalue="Gradle.TestEditContact.editContactPositiveTest" />
+        <item itemvalue="Gradle.TestDeleteContactById.deleteContactByIdPositiveTest" />
         <item itemvalue="Gradle.TestEditContact.edidContactPositiveTest" />
-        <item itemvalue="Gradle.TestsDeleteContact.deleteContactTest" />
-        <item itemvalue="Gradle.TestGetAllUserContacts.getAllUserContacts" />
-        <item itemvalue="Gradle.TestAddNewContact.addNweContactPositiveTest" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765819984128</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="rest assured get add edit contact">
+      <option name="closed" value="true" />
+      <created>1765824985196</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1765824985196</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -386,6 +392,7 @@
     <MESSAGE value="Swipe" />
     <MESSAGE value="HW_16 editFirstContactTest, editMiddleContactTest" />
     <MESSAGE value="rest assured" />
-    <option name="LAST_COMMIT_MESSAGE" value="rest assured" />
+    <MESSAGE value="rest assured get add edit contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest assured get add edit contact" />
   </component>
 </project>
